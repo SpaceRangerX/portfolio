@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+:root {
+    --SB: 'Styrene B';
+    --PDU: 'PDU';
+    --font: 'Roboto';
+    --gray: #292929;
+    --ligth-gray: rgba(41, 41, 41, 0.5);
+    --black: #151515;
+    --white: #FFFFFF;
+}
+
+html {
+    line-height: 1;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: var(--white);
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+
+img {
+    max-width: 100%
+}
+
+*:not(tspan) {
+    font-family: var(--font);
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 114px);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+

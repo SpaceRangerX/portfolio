@@ -1,6 +1,10 @@
-@import 'default_theme';
+// @import 'default_theme';
 
 // Ditto include zone (don't delete anything below)
 // #DittoPartials
-@import "partials/hello";
+// @import "partials/hello";
 // #DittoTemplates
+@import "./templates/home-template";
+
+@import "./general";
+@import "./footer";
