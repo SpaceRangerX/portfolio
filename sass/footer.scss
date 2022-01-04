@@ -1,6 +1,18 @@
 #footer-wrapper {
     background-color: var(--black); 
+    padding: 20px 10px;
+
+    .row {
+        justify-content: end;
+    }
+
+    .social-media {
+        width: 40px;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
     p {
         color: var(--white);
+        margin: 0;
     }
 }

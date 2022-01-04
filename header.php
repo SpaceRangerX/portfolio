@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
   <header id="header-wrapper">
     <div class="container">
-      <nav class="navbar">
+      <nav class="navbar row space-between vertical-center">
         <div class="logo">
           <?php if (has_custom_logo()): ?>
             <?php the_custom_logo(); ?>
@@ -40,18 +40,8 @@ if ( ! defined( 'ABSPATH' ) ) {
             <a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
           <?php endif ?>
         </div>
-        <?php if(get_bloginfo('description') != ''): ?>
-          <div class="slogan">
-            <p><?= get_bloginfo('description') ?></p>
-          </div>
-        <?php endif; ?>
+       
         <div class="main-menu">
-          <div class="hamburguer" onclick="ditto.menu(this)">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
           <?php
             wp_nav_menu([
               'menu'            => 'main_menu',

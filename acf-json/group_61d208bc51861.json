@@ -3,6 +3,65 @@
     "title": "Home",
     "fields": [
         {
+            "key": "field_61d33d84811d2",
+            "label": "Description",
+            "name": "description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_61d351c9980b7",
+            "label": "Skills",
+            "name": "skills",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_61d351d7980b8",
+                    "label": "Skill",
+                    "name": "skill",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
             "key": "field_61d209602c2b5",
             "label": "Featured Projects",
             "name": "featured_projects",
@@ -219,5 +278,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1641156430
+    "modified": 1641239014
 }
